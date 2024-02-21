@@ -3,9 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arturo's Portfolio</title>
+    <title>Arturo Morales</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/53ecaf823c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <nav class="nav">
+        <div class="nav_container">
+            <span class="nav_logo">Arturo Morales</span>
+            <div class="nav_links">
+                <a href="#home" class="nav_link">Home</a>
+                <a href="#about" class="nav_link">About</a>
+                <a href="#projects" class="nav_link">Projects</a>
+                <a href="#contact" class="nav_link">
+                    <button class="nav_link_button">Contact</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <div class="row header_row">
+                <span class="header_span">Hey, I'm</span>
+                <h1 class="header_title">Arturo Morales</h1>
+                <h2 class="header_subtitle">Full-Stack Developer & Telecommunications Engineer</h2>
+                <span class="header_about">Find out more <a href="#about" class="bold">about me.</a></span>
+                <div class="header_links">
+                    <a href="https://www.linkedin.com/in/moralesarturo/" class="header_link" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Artmo10" class="header_link" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/moralesarturo/" class="header_link" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+                <a class="header_scroll" href="#about">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row about_row">
+                    <div class="about_content">
+                        <div class="about_text">
+                            <h3 class="about_title">About me</h3>
+                            <h4 class="about_text_subtitle">Arturo Morales</h4>
+                            <p class="about_text_para">
+                                I'm a Bolivian
+                                <span class="bold">Full-Stack  developer</span> with talent and passion in 
+                                <span class="bold">Front-end</span>
+                                and 
+                                <span class="bold">Back-end</span>
+                                software design, implementation, and maintenance to deliver high-quality solutions.
+                            </p>
+                        </div>
+                        <div class="about_skills">
+                            <h3 class="about_title">My Skills</h3>
+                            <div class="about_skill_wrapper">
+                                <figure class="about_skill">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="about_skill_image">
+                                    <span class="about_skill_name">HTML</span>
+                                </figure>
+                                <figure class="about_skill">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="about_skill_image">
+                                    <span class="about_skill_name">HTML</span>
+                                </figure>
+                                <figure class="about_skill">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="about_skill_image">
+                                    <span class="about_skill_name">HTML</span>
+                                </figure>
+                                <figure class="about_skill">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="about_skill_image">
+                                    <span class="about_skill_name">HTML</span>
+                                </figure>
+                                <figure class="about_skill">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="about_skill_image">
+                                    <span class="about_skill_name">HTML</span>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="about_image_wrapper">
+                        <img src="./assets/about-image.png" alt="" class="about_image">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <div class="row projects_row">
+                    <h2 class="projects_title">Projects</h2>
+                    <div class="project">
+                        <figure class="project_image_wrapper">
+                            <img src="./assets/project-image.png" alt="" class="project_image">
+                            <div class="project_image_links">
+                                <a href="#" target="_blank" class="project_image_link">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="www.github" target="_blank" class="project_image_link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </figure>
+                        
+                        <div class="project_description">
+                            <h3 class="project_title">
+                                Project Name
+                            </h3>
+                            <div class="project_skills">
+                                <div class="project_skill">HTML</div>
+                                <div class="project_skill">CSS</div>
+                                <div class="project_skill">JavaScript</div>
+                                <div class="project_skill">React</div>
+                            </div>
+                            <p class="project_para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nostrum.
+                            </p>
+
+                            <div class="project_links">
+                                <a href="" class="project_link">
+                                    <span>Live Link</span>
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="" class="project_link">
+                                    <span>Code</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <figure class="project_image_wrapper">
+                            <img src="./assets/project-image.png" alt="" class="project_image">
+                            <div class="project_image_links">
+                                <a href="#" target="_blank" class="project_image_link">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="www.github" target="_blank" class="project_image_link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </figure>
+                        
+                        <div class="project_description">
+                            <h3 class="project_title">
+                                Project Name
+                            </h3>
+                            <div class="project_skills">
+                                <div class="project_skill">HTML</div>
+                                <div class="project_skill">CSS</div>
+                                <div class="project_skill">JavaScript</div>
+                                <div class="project_skill">React</div>
+                            </div>
+                            <p class="project_para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nostrum.
+                            </p>
+
+                            <div class="project_links">
+                                <a href="" class="project_link">
+                                    <span>Live Link</span>
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="" class="project_link">
+                                    <span>Code</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <figure class="project_image_wrapper">
+                            <img src="./assets/project-image.png" alt="" class="project_image">
+                            <div class="project_image_links">
+                                <a href="#" target="_blank" class="project_image_link">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="www.github" target="_blank" class="project_image_link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </figure>
+                        
+                        <div class="project_description">
+                            <h3 class="project_title">
+                                Project Name
+                            </h3>
+                            <div class="project_skills">
+                                <div class="project_skill">HTML</div>
+                                <div class="project_skill">CSS</div>
+                                <div class="project_skill">JavaScript</div>
+                                <div class="project_skill">React</div>
+                            </div>
+                            <p class="project_para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nostrum.
+                            </p>
+
+                            <div class="project_links">
+                                <a href="" class="project_link">
+                                    <span>Live Link</span>
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="" class="project_link">
+                                    <span>Code</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <figure class="project_image_wrapper">
+                            <img src="./assets/project-image.png" alt="" class="project_image">
+                            <div class="project_image_links">
+                                <a href="#" target="_blank" class="project_image_link">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="www.github" target="_blank" class="project_image_link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </figure>
+                        
+                        <div class="project_description">
+                            <h3 class="project_title">
+                                Project Name
+                            </h3>
+                            <div class="project_skills">
+                                <div class="project_skill">HTML</div>
+                                <div class="project_skill">CSS</div>
+                                <div class="project_skill">JavaScript</div>
+                                <div class="project_skill">React</div>
+                            </div>
+                            <p class="project_para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nostrum.
+                            </p>
+
+                            <div class="project_links">
+                                <a href="" class="project_link">
+                                    <span>Live Link</span>
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                <a href="" class="project_link">
+                                    <span>Code</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
