@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./app.js"></script>
     <script src="https://kit.fontawesome.com/53ecaf823c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "nkkaCcHuk9QNnD2oo",
+            });
+        })();
+    </script>
 </head>
 <body>
+
+    <div class="success">
+        <i class="fa-regular fa-circle-check success_icon"></i>
+        <div class="success_text">
+            <span class="success_text_title">Message Sent!</span>
+            <p class="success_text_para">Your message has been received. I'll get back to you soon!</p>
+        </div>
+    </div>
+
     <nav class="nav">
         <div class="nav_container">
             <span class="nav_logo">Arturo Morales</span>
@@ -20,8 +39,27 @@
                     <button class="nav_link_button">Contact</button>
                 </a>
             </div>
+            <button class="nav_menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
+
+    <div class="menu_wrapper">
+        <nav class="menu">
+            <button class="menu_close" onclick="closeMenu()">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <div class="menu_links">
+                <a href="#home" class="menu_link" onclick="closeMenu()">Home</a>
+                <a href="#about" class="menu_link" onclick="closeMenu()">About Me</a>
+                <a href="#projects" class="menu_link" onclick="closeMenu()">Projects</a>
+                <a href="#contact" class="menu_link" onclick="closeMenu()">
+                    <button class="menu_link_button">Contact</button>
+                </a>
+            </div>
+        </nav>
+    </div>
 
     <header id="home">
         <svg
@@ -324,20 +362,25 @@
                             <span>arturo.morales.veliz@gmail.com</span>
                         </a>
                     </div>
-                    <form class="contact_form">
+                    <form class="contact_form" onsubmit="sendEmail(event)">
                         <div class="form_item">
                             <label for="" class="form_item_label">Name</label>
-                            <input type="text" class="form_item_input">
+                            <input required name="name" type="text" class="form_item_input">
                         </div>
                         <div class="form_item">
                             <label for="" class="form_item_label">Email</label>
-                            <input type="email" class="form_item_input">
+                            <input required name="email" type="email" class="form_item_input">
                         </div>
                         <div class="form_item">
                             <label for="" class="form_item_label">Message</label>
-                            <textarea required class="form_item_textarea"></textarea>
+                            <textarea required name="message" class="form_item_textarea"></textarea>
                         </div>
-                        <button class="contact_form_submit">Send</button>
+                        <button class="contact_form_submit">
+                            Send
+                            <div class="contact_form_loading hidden">
+                                <i class="fa-solid fa-spinner contact_form_loading_icon"></i>
+                            </div>
+                        </button>
                     </form>
                 </div>
             </div>
