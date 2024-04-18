@@ -9,7 +9,7 @@
 }
 
 :root {
-    --primary: #000000;
+    --primary: #445D48;
 }
 
 html, body {
@@ -71,6 +71,26 @@ a {
     display: none !important;
 }
 
+@keyframes fadeInAnimate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpAnimate {
+    0% {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 /* Nav Bar */
 .nav {
     position: fixed;
@@ -78,6 +98,7 @@ a {
     height: 80px;
     z-index: 10;
     width: 100%;
+    animation: fadeInAnimate 1000ms;
 }
 
 .nav_container {
@@ -239,6 +260,7 @@ a {
 .header_span {
     font-size: 18px;
     font-weight: 600;
+    animation: slideUpAnimate 500ms;
 }
 
 .header_title {
@@ -246,23 +268,27 @@ a {
     font-weight: 600;
     line-height: 100px;
     color: var(--primary);
+    animation: slideUpAnimate 500ms 100ms backwards;
 }
 
 .header_subtitle {
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
+    animation: slideUpAnimate 500ms 150ms backwards;
 }
 
 .header_about {
     margin-top: 8px;
     font-size: 18px;
+    animation: slideUpAnimate 500ms 200ms backwards;
 }
 
 .header_links {
     display: flex;
     gap: 16px;
     margin-top: 16px;
+    animation: slideUpAnimate 500ms 300ms backwards;
 }
 
 .header_scroll {
@@ -272,7 +298,7 @@ a {
     bottom: 32px;
     left: 50%;
     transform: translateX(-50%);
-    animation: headerScrollAnimate 1000ms infinite alternate-reverse;
+    animation: fadeInAnimate 500ms 500ms backwards, headerScrollAnimate 1000ms infinite alternate-reverse;
 }
 
 @keyframes headerScrollAnimate {
@@ -767,8 +793,8 @@ footer {
     }
 
     .header_title {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 56px;
+        line-height: 56px;
     }
 
     .header_subtitle {
@@ -865,9 +891,14 @@ footer {
 
     /* Header */
 
+    .header_title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
     .header_subtitle {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 24px;
+        line-height: 24px;
     }
 
     .blob-header {
@@ -910,12 +941,12 @@ footer {
     }
 
     .header_title {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .header_subtitle {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 18px;
     }
 
     /* About */
